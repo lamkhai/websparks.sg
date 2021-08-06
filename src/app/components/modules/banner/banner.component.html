@@ -1,0 +1,15 @@
+<div *ngIf="getClassName() == ''" class="home-banner">
+    <div class="jumbotron jumbotron-fluid bg-image">
+        <div class="container jumbotron-caption">
+            <h1>Harness the Power of the Web</h1>
+            <p><span>Websparks</span>, adding the sparkles to our web presence.</p>
+        </div>
+    </div>
+</div>
+<div *ngIf="getClassName() != ''" class="{{getClassName()}}-banner">
+    <div class="jumbotron jumbotron-fluid bg-image">
+        <div class="jumbotron-caption">
+            <div class="container" [innerHTML]="getInnerHTML()"></div>
+        </div>
+    </div>
+</div>

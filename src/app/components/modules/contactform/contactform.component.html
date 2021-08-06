@@ -1,0 +1,67 @@
+<div class="contact-section">
+    <div class="container">
+        <div class="header">
+            <h3>Keep in touch with us</h3>
+        </div>
+        <p class="small-text">For more information on how our services can be applied to your business, please contact us:</p>
+        <div class="contact-form">
+            <form method="post" action="send.php" id="contactForm">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" class="form-control">
+                            <span class="e_name">* Please include Name</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control">
+                            <span class="e_email">Please include Email</span>
+                            <span class="e_email-1">*Email Validate !</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <span class="e_sub">Please include subject</span>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea rows="10" cols="40" id="message" name="message" class="form-control"></textarea>
+                            <span class="e_mes">* Please input your Message.</span>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="submitMessage">
+                            <a onclick="submitMsg()" id="btn" class="link">Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="msgSuccess" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="fas fa-window-close"></span>
+                        </button>
+            </div>
+            <img src="assets/images/icons/round-done-button.svg">
+            <div class="modal-body">
+                <p>Successed!</p>
+                <small>Your message has sent succesfully</small>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-round"><a routerLink="/">Back to home page</a></button>
+            </div>
+        </div>
+    </div>
+</div>

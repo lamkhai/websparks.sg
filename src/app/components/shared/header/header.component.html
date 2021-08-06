@@ -1,0 +1,31 @@
+<header class="navbar navbar-expand-lg {{getClass()}}-page-navbar">
+    <div class="container">
+        <a class="navbar-brand websparks-logo" routerLink="/">
+            <img class="img-fluid" src="./assets/images/logo/websparks_logo.png" alt="websparks_logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#wsNavbar" aria-controls="wsNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="wsNavbar">
+            <div class="quicklinks ml-auto">
+                <ul class="navbar-nav">
+                    <li class="navbar-item"><a class="nav-link" routerLink="/">Home</a></li>
+                    <li class="navbar-item"><a class="nav-link" routerLink="/about-us">About</a></li>
+                    <li class="navbar-item"><a class="nav-link" routerLink="/portfolio">Portfolio</a></li>
+                    <li class="navbar-item dropdown"><a class="nav-link dropdown-toggle" routerLink="/services">Services</a><span class="fas fa-chevron-down"></span>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a class="nav-link" routerLink="/services-application-development">Application Development</a></li>
+                            <li class="dropdown-item"><a class="nav-link" routerLink="/services-cms-implementation">CMS Implementation</a></li>
+                            <li class="dropdown-item"><a class="nav-link" routerLink="/services-cwp">Content Website Platform</a></li>
+                            <li class="dropdown-item"><a class="nav-link" routerLink="/services-project-managment">Project Managment</a></li>
+                            <li class="dropdown-item"><a class="nav-link" routerLink="/services-ui-ux">UI / UX Experience</a></li>
+                            <li class="dropdown-item"><a class="nav-link" routerLink="/services-website-maintenance">Website Maintenance</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item"><a class="nav-link" routerLink="/careers">Careers</a></li>
+                    <li class="navbar-item"><a class="nav-link" routerLink="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
