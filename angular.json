@@ -24,15 +24,9 @@
               "src/assets"
             ],
             "styles": [
-              // "src/assets/plugins/bootstrap/dist/css/bootstrap.min.css",
-              // "src/assets/plugins/fontawesome/css/all.min.css",
-              // "src/assets/styles/main.min.css",
               "src/styles.css"
             ],
             "scripts": [
-              // "src/assets/scripts/jquery.min.js",
-              // "src/assets/scripts/popper.min.js",
-              // "src/assets/plugins/bootstrap/dist/js/bootstrap.min.js",
               "src/assets/scripts/main.min.js"
             ]
           },
@@ -126,8 +120,13 @@
               "devServerTarget": "websparks-sg:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "websparks-sg"
 }
